@@ -41,8 +41,7 @@ RL + GAN for Text Generation，SeqGAN[17]站在前人RL Text Generation的肩膀
 ### IRGAN 信息检索模型之间的对抗游戏
 
 
-
-
+<img src="http://latex.codecogs.com/gif.latex?D(d | q)=\sigma\left(f_{\phi}(d, q)\right)=\frac{\exp \left(f_{\phi}(d, q)\right)}{1+\exp \left(f_{\phi}(d, q)\right)}"/>
 
 
 
