@@ -35,8 +35,7 @@ https://zhuanlan.zhihu.com/p/33752313
 ### SeqGAN 和 Conditional SeqGAN
 RL + GAN for Text Generation，SeqGAN[17]站在前人RL Text Generation的肩膀上，可以说是GAN for Text Generation中的代表作。上面虽然花了大量篇幅讲述RL ChatBot的种种机理，其实都是为了它来做铺垫。试想我们使用GAN中的判别器D作为强化学习中奖励 Reward 的来源，假设需要生成长度为T的文本序列，则对于生成文本的奖励值
 
-<img src="http://latex.codecogs.com/gif.latex? \tilde{R}_{\theta}\left(s_{1: t-1}\right)=\frac{1}{N} \sum_{i=1}^{N} D\left(s_{1: t-1}+y^{i}\right), \quad y^{i} \in M C_{\theta}\left(s_{1: t-1} ; N\right)" />
-
+<img src="http://latex.codecogs.com/gif.latex? \tilde{R}_{\theta}\left(s_{1: t-1}\right)=\frac{1}{N} \sum_{i=1}^{N} D\left(s_{1: t-1}+y^{i}\right), \quad y^{i} \in M C_{\theta}\left(s_{1: t-1} ; N\right)"/>
 
 ### IRGAN 信息检索模型之间的对抗游戏
 

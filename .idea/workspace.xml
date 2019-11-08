@@ -97,7 +97,28 @@
       <option name="project" value="LOCAL" />
       <updated>1573181323486</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="seqGAN相关内容">
+      <created>1573182186749</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573182186749</updated>
+    </task>
+    <task id="LOCAL-00008" summary="seqGAN相关内容">
+      <created>1573182286389</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573182286389</updated>
+    </task>
+    <task id="LOCAL-00009" summary="seqGAN相关内容">
+      <created>1573182363999</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573182363999</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
