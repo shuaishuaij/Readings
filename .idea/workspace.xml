@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ef7a45-bad2-4b62-9c40-e1ddcde84f56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NLP各种任务的评价指标/信息检索/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Friday-Seminar-记录/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/NLP各种任务的评价指标/信息检索" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Friday-Seminar-记录" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -29,6 +29,7 @@
       <recent name="E:\my_git_hub\Readings\NLP-GAN-对抗训练" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\my_git_hub\Readings\Friday-Seminar-记录" />
       <recent name="E:\my_git_hub\Readings\NLP各种任务的评价指标\信息检索" />
       <recent name="E:\my_git_hub\Readings\对抗训练" />
       <recent name="E:\my_git_hub\Readings\对抗训练\seqGAN" />
@@ -134,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573196555806</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="seqGAN相关内容">
+      <created>1573196879808</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573196879808</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
