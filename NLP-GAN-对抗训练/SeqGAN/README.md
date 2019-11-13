@@ -82,3 +82,7 @@ game.
 the discriminator at the end of each episode via Monte Carlo
 approach**, and the generator picks the action and learns the
 policy using estimated overall rewards.
+
+### Model
+
+![SeqGAN](https://github.com/shuaishuaij/Readings/blob/master/NLP-GAN-%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/SeqGAN/pics/seqGAN1.PNG)
