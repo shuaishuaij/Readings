@@ -86,3 +86,39 @@ policy using estimated overall rewards.
 ### Model
 
 ![SeqGAN](https://github.com/shuaishuaij/Readings/blob/master/NLP-GAN-%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/SeqGAN/pics/seqGAN1.PNG)
+
+### SeqGAN via Policy Gradient
+
+* Gθ(yt|Y1:t−1) is to generate a sequence from the start state s0 to maximize its expected end reward.
+* Note that the reward is from the discriminator Dφ
+* Action-value function of a sequence, i.e. the expected accumulative reward starting from state s, taking action a, and then following policy Gθ
+
+*  How to estimate the action-value function? we use the REINFORCE algorithm (Williams 1992) and consider the estimated probability of being real by the discriminator Dφ(Yn1:T) as the reward.
+
+* **The discriminator only provides a reward value for a finished sequence.**
+
+* Since we actually care about the longterm reward, at every timestep, we should not only consider the fitness of previous tokens (prefix) but also the resulted future outcome.
+
+* Thus, to evaluate the action-value for an intermediate state, we apply Monte Carlo search with a roll-out policy Gβ to sample the unknown last T − t tokens.
+
+* **In our experiment, Gβ is set the same as the generator, but one can use
+a simplified version if the speed is the priority (Silver et al.
+2016). To reduce the variance and get more accurate assessment of the action value, we run the roll-out policy starting
+from current state till the end of the sequence for N times to
+get a batch of output samples.**
+
+* when no intermediate reward, the function is iteratively defined as the next-state value starting from
+state s0 = Y1:t and rolling out to the end.
+
+* Once we have a set of more realistic generated sequences, we shall re-train the discriminator model 
+
+* Each time when a new discriminator model has been obtained, we are ready to update the generator. The proposed policy based method relies upon optimizing a parametrized policy to directly maximize the long-term reward.
+
+### Complete Algorithm
+![SeqGAN](https://github.com/shuaishuaij/Readings/blob/master/NLP-GAN-%E5%AF%B9%E6%8A%97%E8%AE%AD%E7%BB%83/SeqGAN/pics/seqGAN2.PNG)
+
+
+
+
+
+

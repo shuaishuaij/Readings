@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ef7a45-bad2-4b62-9c40-e1ddcde84f56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NLP-GAN-对抗训练/SeqGAN/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NLP-GAN-对抗训练/SeqGAN/pics/seqGAN2.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NLP-GAN-对抗训练/SeqGAN/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/NLP-GAN-对抗训练/SeqGAN/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +20,11 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/NLP-GAN-对抗训练/seqGAN" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -150,7 +153,42 @@
       <option name="project" value="LOCAL" />
       <updated>1573205435024</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="更新SeqGAN相关内容">
+      <created>1573607811465</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573607811465</updated>
+    </task>
+    <task id="LOCAL-00015" summary="更新SeqGAN相关内容">
+      <created>1573608382384</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573608382384</updated>
+    </task>
+    <task id="LOCAL-00016" summary="更新SeqGAN相关内容">
+      <created>1573608491049</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573608491049</updated>
+    </task>
+    <task id="LOCAL-00017" summary="更新SeqGAN相关内容">
+      <created>1573609060952</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573609060952</updated>
+    </task>
+    <task id="LOCAL-00018" summary="更新SeqGAN相关内容">
+      <created>1573609128692</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573609128692</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +205,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="seqGAN相关内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="seqGAN相关内容" />
+    <MESSAGE value="更新SeqGAN相关内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新SeqGAN相关内容" />
   </component>
 </project>
