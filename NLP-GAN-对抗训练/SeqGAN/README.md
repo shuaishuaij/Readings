@@ -4,16 +4,16 @@
 
 ### Abstract
 
-* A major reason lies in that the discrete outputs from the generative model make it difficult to pass the gradient update from the discriminative model to the generative model.
+* A major reason lies in that the discrete outputs from the generative model make it difficult to pass the gradient update from the discriminative model to the generative model.
 
-* the discriminative model can only assess a complete sequence, while for a partially generated sequence, it is nontrivial to balance its current score and the future one once the entire sequence has been generated.
+* the discriminative model can only assess a complete sequence, while for a partially generated sequence, it is non-trivial to balance its current score and the future one once the entire sequence has been generated.
 
 * Modeling the data generator as a stochastic policy in reinforcement learning (RL), SeqGAN bypasses the generator differentiation problem by directly performing **gradient policy update**.
 
 ### Introduction
 
 * the maximum likelihood approaches suffer from so-called exposure bias in the inference
-stage: the model generates a sequence iteratively and predicts next token conditioned on its previously predicted ones
+stage: the model generates a sequence iteratively and predicts next token conditioned on its previously predicted ones
 that may be never observed in the training data.
 
 * Scheduled sampling (SS), where the generative model is partially fed with its own synthetic data as prefix (observed tokens) rather than the true data when deciding the next token in the training stage. 
@@ -54,3 +54,32 @@ as a stochastic parametrized policy**. In our policy gradient,
 we employ **Monte Carlo (MC) search** to approximate the
 **state-action value**. We directly train the policy (generative
 model) via **policy gradient** (Sutton et al. 1999), which naturally avoids the differentiation difficulty for discrete data in a conventional GAN.
+
+*  In **3 realworld tasks**, i.e. **poem generation**, **speech language generation** and **music generation**, SeqGAN significantly outperforms the compared baselines in various metrics including
+human expert judgement.
+
+### Related Work
+
+* GAN bypasses the difficulty of maximum likelihood learning and has gained striking successes in natural image generation (Denton et al. 2015). However, little progress has
+been made in applying GANs to sequence discrete data generation problems, e.g. natural language generation (Huszar´
+2015). This is due to the generator network in GAN is designed to be able to adjust the output continuously, which
+does not work on discrete data generation (Goodfellow
+2016).
+
+* The most popular way of training RNNs is to maximize the likelihood of
+each token in the training data whereas (Bengio et al. 2015)
+pointed out that the discrepancy between training and generating makes the maximum likelihood estimation suboptimal and proposed scheduled sampling strategy (SS)
+
+* **(Huszar 2015)** theorized that the objective function underneath SS is improper and explained the reason why GANs tend to generate natural-looking samples in theory.
+
+* **Consequently, the GANs have great potential but are not practically feasible to discrete probabilistic models currently.**
+
+* For most practical sequence generation tasks, e.g. machine translation (Sutskever,
+Vinyals, and Le 2014), **the reward signal is meaningful only
+for the entire sequence**, for instance in the game of Go (Silver et al. 2016), the reward signal is only set at the end of the
+game. 
+
+*  Here in our work , **a reward signal is provided by
+the discriminator at the end of each episode via Monte Carlo
+approach**, and the generator picks the action and learns the
+policy using estimated overall rewards.
