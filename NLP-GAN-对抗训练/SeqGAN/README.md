@@ -12,7 +12,7 @@
 
 ### Introduction
 
-* the maximum likelihood approaches suffer from so-called exposure bias in the inference
+* the maximum likelihood approaches suffer from so-called exposure bias in the inference
 stage: the model generates a sequence iteratively and predicts next token conditioned on its previously predicted ones
 that may be never observed in the training data.
 
@@ -25,7 +25,7 @@ of the training / inference discrepancy problem is to build
 the loss function on the entire generated sequence instead
 of each transition.
 
-* a task specific sequence score/loss, bilingual evaluation understudy (BLEU) (Papineni et al. 2002),
+* a task specific sequence score/loss, bilingual evaluation understudy (BLEU) (Papineni et al. 2002),
 can be adopted to guide the sequence generation.
 
 * In GAN a discriminative
@@ -61,8 +61,7 @@ human expert judgement.
 ### Related Work
 
 * GAN bypasses the difficulty of maximum likelihood learning and has gained striking successes in natural image generation (Denton et al. 2015). However, little progress has
-been made in applying GANs to sequence discrete data generation problems, e.g. natural language generation (Huszar´
-2015). This is due to the generator network in GAN is designed to be able to adjust the output continuously, which
+been made in applying GANs to sequence discrete data generation problems, e.g. natural language generation (Huszar 2015). This is due to the generator network in GAN is designed to be able to adjust the output continuously, which
 does not work on discrete data generation (Goodfellow
 2016).
 
